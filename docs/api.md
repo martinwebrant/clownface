@@ -100,8 +100,7 @@ Gets the current context's datasets
 <a name="Clownface+any"></a>
 
 ### clownface.any() ⇒ [<code>Clownface</code>](#Clownface)
-Removes current pointers from the context and return an "any pointer".
-The returned object can be used to find any nodes in the dataset
+Removes current pointers from the context and return an "any pointer".The returned object can be used to find any nodes in the dataset
 
 **Kind**: instance method of [<code>Clownface</code>](#Clownface)  
 <a name="Clownface+list"></a>
@@ -173,14 +172,7 @@ Calls a defined callback function on each graph pointer, and returns an array th
 <a name="Clownface+node"></a>
 
 ### clownface.node(values, [options]) ⇒ [<code>Clownface</code>](#Clownface)
-Creates graph pointer to one or more node(s)
-
-Depending on the value creates pointers to:
-
-- blank node context for null `values`
-- literal for string `values` and no `options` paramter
-- matching RDF/JS term
-- term created according to `options.type` parameter
+Creates graph pointer to one or more node(s)Depending on the value creates pointers to:- blank node context for null `values`- literal for string `values` and no `options` paramter- matching RDF/JS term- term created according to `options.type` parameter
 
 **Kind**: instance method of [<code>Clownface</code>](#Clownface)  
 <table>
@@ -311,9 +303,7 @@ Creates a graph pointer to nodes which link the current pointer by `predicates`
 <a name="Clownface+has"></a>
 
 ### clownface.has(predicates, [objects]) ⇒ [<code>Clownface</code>](#Clownface)
-Creates a graph pointer to nodes which are subjects of predicates, optionally also with specific objects
-
-If the current context is empty, will check all potential subjects
+Creates a graph pointer to nodes which are subjects of predicates, optionally also with specific objectsIf the current context is empty, will check all potential subjects
 
 **Kind**: instance method of [<code>Clownface</code>](#Clownface)  
 <table>
